@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcualdora De operaciones básicas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="calculator">
+        <label for="">Ingresa el valor 1</label>
+        <input type="text" id="valor1" placeholder="Agrega un numero">
+        <label for="">Ingresa el el valor 2</label>
+        <input type="text" id="valor2" placeholder="Agrega un numero">
+        <label for="">Resultado</label>
+        <input type="text" id="resultado" placeholder="Resultado" >
+    
+        <div class="boton">
+    <br>
+          <button onclick="calculate('sumar')">+</button>
+          <button onclick="calculate('restar')">-</button>
+          <button onclick="calculate('multiplicar')">*</button>
+          <button onclick="calculate('dividir')">/</button>
+        </div>
+        <div id="result"></div>
+      </div>
+</div>
+  <script src="/js/Calculadora.js"></script>
+</body>
+</html>

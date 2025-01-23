@@ -3,8 +3,6 @@ let val1 = 0;
 let val2 = 0;
 let operacion = "";
 let resultado = 0;
-
-
 function resta(val1, val2) {
     return val1 - val2;
 }
@@ -45,3 +43,4 @@ function calculate(operacion) {
     }
     output.value = resultado.toString();
 }
+window.calculate = calculate;

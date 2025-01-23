@@ -25,6 +25,7 @@ function multiplicacion(val1:number,val2:number):number{
 
 function calculate(operacion: string): void {
     
+    
     const input1 = document.getElementById("valor1") as HTMLInputElement;
     const input2 = document.getElementById("valor2") as HTMLInputElement;
     const output = document.getElementById("resultado") as HTMLInputElement;
@@ -53,3 +54,7 @@ function calculate(operacion: string): void {
   
     output.value = resultado.toString();
   }
+
+(window as any).calculate=calculate;
+
+
